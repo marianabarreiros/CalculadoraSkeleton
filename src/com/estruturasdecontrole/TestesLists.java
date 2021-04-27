@@ -1,9 +1,4 @@
-package com.company;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Objects;
-import javax.sound.midi.Soundbank;
+package com.estruturasdecontrole;
 
 public class TestesLists {
 

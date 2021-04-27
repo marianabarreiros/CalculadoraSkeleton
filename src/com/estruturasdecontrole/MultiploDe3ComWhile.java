@@ -1,7 +1,4 @@
-package com.company;
-
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
-import java.util.Scanner;
+package com.estruturasdecontrole;
 
 public class MultiploDe3ComWhile {
 

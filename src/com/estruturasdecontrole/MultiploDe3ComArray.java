@@ -1,4 +1,4 @@
-package com.company;
+package com.estruturasdecontrole;
 
 public class MultiploDe3ComArray {
 
