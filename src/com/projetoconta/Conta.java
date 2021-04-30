@@ -1,6 +1,6 @@
 package com.projetoconta;
 
-public class Conta {
+public abstract class Conta {
 
   private Cliente cliente;
   private long numeroDaConta;
@@ -16,6 +16,10 @@ public class Conta {
 
   public double getSaldo() {
     return saldo;
+  }
+
+  public void setSaldo(double valor){
+    this.saldo = valor;
   }
 
   public Conta(Cliente cliente, long numeroDaConta) {
@@ -34,15 +38,9 @@ public class Conta {
   }
 
   public void depositar(double valor) {
+
     this.saldo = this.saldo + valor;
   }
 
-  public void pix(double valor, Conta contaDeDestino){
-    if (valor <= this.saldo) {
-      this.saldo = this.saldo - valor;
-      contaDeDestino.depositar(valor);
-    } else {
-      System.out.println("Limite indisponível para transferência");
-    }
-  }
+  public abstract void pix(double valor, Conta contaDeDestino);
 }
